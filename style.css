@@ -40,6 +40,31 @@ p {
     margin: 15px 0 20px 0;
 }
 
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
 /* padding */
 .section-p1 {
     padding: 40px 80px;
@@ -106,12 +131,12 @@ p {
 
 /* Home */
 #hero {
-    background-image: url("image/hero4.jpg");
+    background-image: url("image/top.jpg");
     height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top 25% right -100px;
+    background-position: top 25% right -150px;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
@@ -254,9 +279,10 @@ p {
     text-align: center;
     background-image: url("image/banner/banner-bg.jpg");
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-size: cover;
     background-position: center;
+    margin: 50px 0;
 }
 
 #banner h4 {
@@ -270,3 +296,74 @@ p {
     padding: 10px 0;
 }
 
+#banner h2 span {
+    color: #ef3636;
+}
+
+#banner button:hover {
+    background: #088178;
+    color: #fff;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("image/banner/sm-banner1.jpg");
+    min-width: 540px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin: 50px 0;
+}
+
+#sm-banner .banner2{
+    background-image: url("image/banner/sm-banner2.jpg");
+}
+
+#sm-banner h4 {
+    color: #83a78d;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: #83a78d;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    color: #83a78d;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button {
+    color: #fff;
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+#banner3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("image/banner/sm-banner2.webp");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin: 50px 0;
+}
